@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,66,84,19,12,8,91,review,cli tools baseline scenario exercises the review path for bounded failure handling
+pressure,85,75,27,21,11,39,review,cli tools pressure scenario exercises the review path for bounded failure handling
+surge,98,96,19,17,13,142,review,cli tools surge scenario exercises the review path for bounded failure handling
+degraded,71,57,31,29,8,-81,review,cli tools degraded scenario exercises the review path for bounded failure handling
+recovery,85,103,19,11,9,157,review,cli tools recovery scenario exercises the review path for bounded failure handling
+boundary,78,83,20,14,9,99,review,cli tools boundary scenario exercises the review path for bounded failure handling
