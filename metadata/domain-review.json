@@ -1,0 +1,73 @@
+{
+  "repo": "watch-tool-watch-mark",
+  "language": "Python",
+  "category": "CLI tools",
+  "goal": "Package a Python local lab for watch analysis with fixture event logs, golden state snapshots, and documented operating limits.",
+  "review_model": {
+    "terms": [
+      "file span",
+      "terminal width",
+      "argument risk",
+      "report density"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "file span",
+      "signal": 43,
+      "slack": 41,
+      "drag": 32,
+      "confidence": 92,
+      "score": 123,
+      "lane": "watch"
+    },
+    {
+      "name": "stress",
+      "focus": "terminal width",
+      "signal": 63,
+      "slack": 38,
+      "drag": 28,
+      "confidence": 56,
+      "score": 136,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "argument risk",
+      "signal": 48,
+      "slack": 27,
+      "drag": 23,
+      "confidence": 60,
+      "score": 114,
+      "lane": "watch"
+    },
+    {
+      "name": "recovery",
+      "focus": "report density",
+      "signal": 69,
+      "slack": 44,
+      "drag": 22,
+      "confidence": 61,
+      "score": 177,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "file span",
+      "signal": 90,
+      "slack": 41,
+      "drag": 18,
+      "confidence": 74,
+      "score": 241,
+      "lane": "ship"
+    }
+  ]
+}
